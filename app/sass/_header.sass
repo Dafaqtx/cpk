@@ -1,2 +1,134 @@
 /* header */
 .header
+	background: url('../img/header/header-bg.jpg') center top no-repeat
+	padding-top: 10px
+
+	&__logo
+		max-width: 104px
+		margin-right: 16px
+
+	&__desc
+		color: #fff
+		margin-top: 14px
+		margin-right: 29px
+
+		&-name
+			font-weight: 600
+			font-size: 14px
+			padding-bottom: 6px
+			width: 160px
+			border-bottom: 1px solid #fff
+
+		&-title
+			font-size: 14px
+			width: 160px
+			margin-top: 4px
+			line-height: normal
+	
+	&__location
+		max-width: 230px
+		color: #fff
+		margin-top: 34px
+		margin-right: 74px
+
+		&-address
+			font-size: 14px
+
+		&-tel
+			font-size: 18px
+			font-weight: 700
+			text-align: right
+			margin-top: 5px
+
+	&__registr
+		margin-right: 28px
+
+		&-btn
+			width: 255px
+			height: 49px
+			background: url('../img/header/regist.svg') 17px center no-repeat $green-pea
+			border: 1px solid #fff
+			box-sizing: border-box
+			box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25)
+			border-radius: 5px
+			color: #fff
+			font-size: 13px
+			font-weight: 700
+			text-align: right
+			padding-right: 23px
+			margin-top: 39px
+			cursor: pointer
+			transition: background .3s ease
+
+			&:hover
+				background-color: $green-haze
+				transition: background .3s ease
+
+	&__login
+
+		&-spec
+			display: block
+			color: #fff
+			font-size: 13px
+			text-decoration: underline
+			text-align: right
+			background: url('../img/header/eye.svg') left center no-repeat
+			width: 201px
+			margin-left: auto
+
+		&-btn
+			display: block
+			width: 255px
+			height: 49px
+			background: url('../img/header/login.svg') 17px center no-repeat $green-pea
+			border: 1px solid #fff
+			box-sizing: border-box
+			box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25)
+			border-radius: 5px
+			color: #fff
+			font-size: 13px
+			font-weight: 700
+			padding-left: 60px
+			padding-top: 3px
+			text-align: left
+			margin-top: 20px
+			cursor: pointer
+			transition: background .3s ease
+
+			&:hover
+				color: #fff
+				text-decoration: none
+				background-color: $green-haze
+				transition: background .3s ease
+	
+	&__menu
+		background: #046650
+		max-width: 1360px
+		margin: 0 auto
+		height: 48px
+		margin-top: 9px
+		padding-top: 13px	
+
+		&-list
+			list-style: none
+			padding: 0
+			max-width: 1110px
+			margin: 0 auto
+
+		&-item
+
+			&:hover
+				border-bottom: 1px solid #fff
+			
+			&--active
+				border-bottom: 1px solid #fff
+
+		
+		&-link
+			color: #fff
+			font-size: 15px
+			font-weight: 600
+
+			&:hover
+				color: #fff
+				text-decoration: none
