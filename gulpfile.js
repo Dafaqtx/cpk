@@ -30,6 +30,7 @@ gulp.task('browser-sync', function() {
 gulp.task('styles', function() {
 	return gulp.src('app/'+syntax+'/**/*.'+syntax+'')
 	.pipe(sass({
+		includePaths: require('node-normalize-scss').includePaths, 
 		outputStyle: 'expanded' 
 	}).on("error", notify.onError()))
 	.pipe(rename({ suffix: '.min', prefix : '' }))

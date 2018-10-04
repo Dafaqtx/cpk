@@ -23,6 +23,7 @@
     "gulp-sass": "^4.0.1",
     "gulp-uglify": "^3.0.1",
     "gulp-util": "^3.0.8",
-    "imagemin-pngquant": "^6.0.0"
+    "imagemin-pngquant": "^6.0.0",
+    "node-normalize-scss": "^8.0.0"
   }
 }
