@@ -1,5 +1,3 @@
-var syntax        = 'sass'; // Syntax: sass or scss;
-
 var gulp          = require('gulp'),
 		gutil         = require('gulp-util' ),
 		sass          = require('gulp-sass'),
@@ -28,7 +26,7 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('styles', function() {
-	return gulp.src('app/'+syntax+'/**/*.'+syntax+'')
+	return gulp.src('app/sass/**/*.sass')
 	.pipe(sass({
 		includePaths: require('node-normalize-scss').includePaths, 
 		outputStyle: 'expanded' 
@@ -44,6 +42,7 @@ gulp.task('js', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/slick-carousel/slick/slick.min.js',
+		'app/libs/fancybox/dist/jquery.fancybox.min.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
@@ -54,7 +53,7 @@ gulp.task('js', function() {
 
 
 gulp.task('watch', ['styles', 'js', 'browser-sync'], function() {
-	gulp.watch('app/'+syntax+'/**/*.'+syntax+'', ['styles']);
+	gulp.watch('app/sass/**/*.sass', ['styles']);
 	gulp.watch(['libs/**/*.js', 'app/js/common.js'], ['js']);
 	gulp.watch('app/*.html', browserSync.reload)
 });
