@@ -28,4 +28,18 @@ $(function() {
 		}]
 	});
 
+	$('#js-partners').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		dotsClass: 'slider__dots slider__dots--last-news flex flex--align-center',
+		infinite: true,
+		prevArrow: '<div class="slider__arrow slider__arrow--prev slider__arrow--partners-prev"><svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15.76" cy="16.041" r="15" stroke="#E0E0E0"/><path d="M11.674 14.477l5.17-5.496a1.356 1.356 0 0 1 2.001 0c.553.587.553 1.54 0 2.127l-4.17 4.433 4.17 4.433c.553.587.553 1.539 0 2.126a1.356 1.356 0 0 1-2 0l-5.17-5.496a1.572 1.572 0 0 1 0-2.127z" fill="#E0E0E0"/></svg></div>',
+		nextArrow: '<div class="slider__arrow slider__arrow--next slider__arrow--partners-next"><svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="16.361" cy="16.041" r="15" transform="rotate(-180 16.361 16.04)" stroke="#E0E0E0"/><path d="M20.447 17.604l-5.17 5.496a1.356 1.356 0 0 1-2.001 0 1.571 1.571 0 0 1 0-2.126l4.17-4.433-4.17-4.433a1.572 1.572 0 0 1 0-2.127 1.356 1.356 0 0 1 2 0l5.171 5.496c.552.588.552 1.54 0 2.127z" fill="#E0E0E0"/></svg></div>',
+		responsive: [
+		{
+			breakpoint: 1024,
+			settings: {}
+		}]
+	});
+
 })
