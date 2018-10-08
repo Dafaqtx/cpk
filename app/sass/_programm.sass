@@ -13,6 +13,7 @@
 		margin-right: 30px
 		margin-bottom: 56px
 		cursor: pointer
+		position: relative
 		
 		&:nth-child(odd)
 			margin-right: 0
@@ -30,6 +31,27 @@
 		transform: translateY(-50%)
 		color: #fff
 		width: 100%
+
+	&__link
+		position: absolute
+		right: 0
+		bottom: 0px
+		width: 140px
+		height: 27px
+		background: linear-gradient(270deg, #1A5455 0%, #143D42 100%)
+		border: 1px solid #fff
+		box-sizing: border-box
+		border-radius: 5px 0px 0px 0px
+		color: #fff
+		font-size: 14px
+		text-align: center
+		font-weight: 600
+		transition: all .3s ease
+
+		&:hover
+			background: linear-gradient(270deg, #019875 0%, #019875 100%)
+			transition: all .3s ease
+
 
 /* partners */
 .partners
