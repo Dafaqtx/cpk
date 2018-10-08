@@ -42,4 +42,11 @@ $(function() {
 		}]
 	});
 
+	$('#js-marquee').marquee({
+		duration: 15000,
+		delayBeforeStart: 0,
+		direction: 'left',
+		duplicated: true
+	});
+
 })
